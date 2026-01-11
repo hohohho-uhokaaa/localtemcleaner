@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype"><value>text/microsoft-resx</value></resheader>
+  <resheader name="version"><value>2.0</value></resheader>
+  <resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms, ...</value></resheader>
+  <resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms, ...</value></resheader>
+
+  <data name="Info_TempPath" xml:space="preserve"><value>一時パス: {0}</value></data>
+  <data name="Mode_DryRun" xml:space="preserve"><value>モード: DRY RUN（削除は実行されません）</value></data>
+  <data name="Mode_Execute" xml:space="preserve"><value>モード: 実行（削除します）</value></data>
+  <data name="Done" xml:space="preserve"><value>完了しました。</value></data>
+
+  <data name="Usage" xml:space="preserve"><value>使い方: LocalTempClear [options]</value></data>
+  <data name="Help_Options" xml:space="preserve"><value>オプション:</value></data>
+  <data name="Help_Run" xml:space="preserve"><value>  -r, --run           削除を実行（デフォルトは dry-run）</value></data>
+  <data name="Help_Days" xml:space="preserve"><value>  -d, --days &lt;n&gt;      n 日より古いファイルを削除（デフォルト 7）</value></data>
+  <data name="Help_Path" xml:space="preserve"><value>  -p, --path &lt;path&gt;   一時パスを指定（デフォルト %TEMP%）</value></data>
+  <data name="Help_Parallel" xml:space="preserve"><value>  -P, --parallel &lt;n&gt;  並列削除を最大 n 並列で実行します（デフォルト 1 = 並列化なし）</value></data>
+  <data name="Help_DeleteAll" xml:space="preserve"><value>  -a, --delete-all    一時パス直下のすべてを削除（トップレベル）</value></data>
+  <data name="Info_Parallelism" xml:space="preserve"><value>並列度: {0}</value></data>
+  <data name="Help_Throttle" xml:space="preserve"><value>  -t, --throttle &lt;bytes/s&gt;  I/O を概ね bytes/s に制限します</value></data>
+  <data name="Help_Log" xml:space="preserve"><value>  -l, --log &lt;path&gt;  詳細ログを指定ファイルに出力します</value></data>
+  <data name="Help_Verbose" xml:space="preserve"><value>  -v, --verbose  詳細ログを有効にします</value></data>
+  <data name="Help_AutoDetectOff" xml:space="preserve"><value>  --no-auto-detect  自動並列判定を無効にします</value></data>
+  <data name="Info_Throttling" xml:space="preserve"><value>スロットル: {0} バイト/秒</value></data>
+  <data name="Help_Help" xml:space="preserve"><value>  -h, --help          このヘルプを表示</value></data>
+
+  <data name="Dry_DeleteFile" xml:space="preserve"><value>削除対象ファイル: {0}</value></data>
+  <data name="Dry_DeleteDir" xml:space="preserve"><value>削除対象ディレクトリ: {0}</value></data>
+  <data name="Dry_DeleteDirTree" xml:space="preserve"><value>ディレクトリツリーを削除: {0}</value></data>
+
+  <data name="Error_Unexpected" xml:space="preserve"><value>予期しないエラー: {0}</value></data>
+  <data name="Error_SkipFile" xml:space="preserve"><value>スキップ (ファイル) {0}: {1}</value></data>
+  <data name="Error_SkipDir" xml:space="preserve"><value>スキップ (ディレクトリ) {0}: {1}</value></data>
+  <data name="Error_SkipListingFiles" xml:space="preserve"><value>{0} のファイル列挙をスキップ: {1}</value></data>
+  <data name="Error_SkipListingDirs" xml:space="preserve"><value>{0} のサブディレクトリ列挙をスキップ: {1}</value></data>
+  <data name="Error_FailedDeleteAfterRetries" xml:space="preserve"><value>リトライ後も削除できませんでした: {0}</value></data>
+  <data name="Error_FailedDeleteDir" xml:space="preserve"><value>ディレクトリを削除できませんでした: {0}: {1}</value></data>
+  <data name="Info_FailedToFullyDeleteDir" xml:space="preserve"><value>{0} を完全に削除できませんでした。詳細削除を試行します。</value></data>
+</root>

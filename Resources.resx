@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype"><value>text/microsoft-resx</value></resheader>
+  <resheader name="version"><value>2.0</value></resheader>
+  <resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms, ...</value></resheader>
+  <resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms, ...</value></resheader>
+
+  <data name="Info_TempPath" xml:space="preserve"><value>Temp path: {0}</value></data>
+  <data name="Mode_DryRun" xml:space="preserve"><value>Mode: DRY RUN (no deletions)</value></data>
+  <data name="Mode_Execute" xml:space="preserve"><value>Mode: EXECUTE (will delete)</value></data>
+  <data name="Done" xml:space="preserve"><value>Done.</value></data>
+
+  <data name="Usage" xml:space="preserve"><value>Usage: LocalTempClear [options]</value></data>
+  <data name="Help_Options" xml:space="preserve"><value>Options:</value></data>
+  <data name="Help_Run" xml:space="preserve"><value>  -r, --run           Execute deletions (otherwise dry-run)</value></data>
+  <data name="Help_Days" xml:space="preserve"><value>  -d, --days &lt;n&gt;      Delete files older than n days (default 7)</value></data>
+  <data name="Help_Path" xml:space="preserve"><value>  -p, --path &lt;path&gt;   Use specific temp path (default %TEMP%)</value></data>
+  <data name="Help_Parallel" xml:space="preserve"><value>  -P, --parallel &lt;n&gt;  Run deletions in parallel with at most n concurrent tasks (default 1 = no parallelism)</value></data>
+  <data name="Help_DeleteAll" xml:space="preserve"><value>  -a, --delete-all    Delete everything under the temp path (top-level)</value></data>
+  <data name="Info_Parallelism" xml:space="preserve"><value>Parallelism: {0}</value></data>
+  <data name="Help_Throttle" xml:space="preserve"><value>  -t, --throttle &lt;bytes/s&gt;  Throttle I/O to approximately bytes per second</value></data>
+  <data name="Help_Log" xml:space="preserve"><value>  -l, --log &lt;path&gt;  Write detailed logs to the specified file</value></data>
+  <data name="Help_Verbose" xml:space="preserve"><value>  -v, --verbose  Enable verbose logging</value></data>
+  <data name="Help_AutoDetectOff" xml:space="preserve"><value>  --no-auto-detect  Disable automatic parallelism detection</value></data>
+  <data name="Info_Throttling" xml:space="preserve"><value>Throttling: {0} bytes/s</value></data>
+  <data name="Help_Help" xml:space="preserve"><value>  -h, --help          Show this help</value></data>
+
+  <data name="Dry_DeleteFile" xml:space="preserve"><value>Delete file: {0}</value></data>
+  <data name="Dry_DeleteDir" xml:space="preserve"><value>Delete dir: {0}</value></data>
+  <data name="Dry_DeleteDirTree" xml:space="preserve"><value>Delete dir tree: {0}</value></data>
+
+  <data name="Error_Unexpected" xml:space="preserve"><value>Unexpected error: {0}</value></data>
+  <data name="Error_SkipFile" xml:space="preserve"><value>Skip file {0}: {1}</value></data>
+  <data name="Error_SkipDir" xml:space="preserve"><value>Skip dir {0}: {1}</value></data>
+  <data name="Error_SkipListingFiles" xml:space="preserve"><value>Skip listing files in {0}: {1}</value></data>
+  <data name="Error_SkipListingDirs" xml:space="preserve"><value>Skip listing subdirs in {0}: {1}</value></data>
+  <data name="Error_FailedDeleteAfterRetries" xml:space="preserve"><value>Failed to delete file after retries: {0}</value></data>
+  <data name="Error_FailedDeleteDir" xml:space="preserve"><value>Could not delete dir {0}: {1}</value></data>
+  <data name="Info_FailedToFullyDeleteDir" xml:space="preserve"><value>Failed to fully delete {0}, attempting granular delete and ignoring failures.</value></data>
+</root>
