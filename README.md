@@ -73,5 +73,3 @@ Usage: LocalTempClear [options]
 - メッセージはリソースファイル（`Resources.resx`, `Resources.ja.resx`）で管理されています。 — Messages and user-facing text are managed via resource files (`Resources.resx`, `Resources.ja.resx`).
 
 ---
-
-(必要なら README の文言や英訳、LICENSE の著作権表記をカスタマイズします。)
