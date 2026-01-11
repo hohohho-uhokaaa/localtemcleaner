@@ -12,7 +12,7 @@
 - トップレベルのすべてを削除するモード（`--delete-all`）。 — Top-level delete mode (`--delete-all`) removes all top-level entries under the temp path.
 - 自動で最適な並列度を判定するか、手動で指定できます（`--parallel`）。 — By default, the tool attempts to detect an appropriate degree of parallelism; you may override this with `--parallel`.
 - I/O スロットリング（`--throttle`）、ログ出力（`--log`）、冗長モード（`--verbose`）に対応します。 — Supports I/O throttling (`--throttle`), file logging (`--log`), and verbose output (`--verbose`).
-
+- この repo のコードはすべて raptor mini(preview) 1.x に生成させています。
 ---
 
 ## 🚀 ビルド / Build
