@@ -18,7 +18,7 @@ namespace LocalTempClear
         {
             var (dryRun, olderThanDays, deleteAll, tempPath, parallelism, autoDetect, throttleBytes, logPath, verbose) = ParseArgs(args);
 
-            // start file logger if requested
+            // start file logger if requested ログ出力フラグに応じて実行ログを生成
             if (!string.IsNullOrEmpty(logPath)) FileLogger.Start(logPath!);
             Logger.SetVerbose(verbose);
 
@@ -303,6 +303,9 @@ namespace LocalTempClear
         /// </summary>
         public static void DeleteAllInTemp(string? tempPath = null, bool dryRun = true, int maxParallelism = 1, TokenBucket? throttle = null)
         {
+            // コードを実行したユーザーの %TEMP% 環境変数値を取得
+            // ex) c:\\Users\\%USER_NAME%\\AppData\\Local\\Temp %TEMP%\\AppData\\Local\\Temp
+            // eq) Environment.CurrentDirectory = Environment.GetEnvironmentVariable("temp");
             tempPath ??= Path.GetTempPath();
             var root = tempPath!;
 
@@ -595,5 +598,6 @@ namespace LocalTempClear
         }
     }
 }
+
 
 
